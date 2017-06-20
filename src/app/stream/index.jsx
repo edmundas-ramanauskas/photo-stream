@@ -15,7 +15,8 @@ const loadNextPage = makePhotosIterator(50)
 
 export default class PhotoStream extends React.Component {
   static propTypes = {
-    photos: PropTypes.array,
+    photos: PropTypes.arrayOf(PropTypes.object),
+    saved: PropTypes.arrayOf(PropTypes.number),
     dispatch: PropTypes.func.isRequired
   }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
 import { isHidpiScreen } from '../../../libs/utils'
@@ -6,6 +7,24 @@ import { isHidpiScreen } from '../../../libs/utils'
 const styles = require('./styles.css')
 
 export default class Photo extends React.Component {
+  static propTypes = {
+    photo: PropTypes.shape({
+      id: PropTypes.number,
+      images: PropTypes.shape({
+        hidpi: PropTypes.string,
+        normal: PropTypes.string
+      }),
+      title: PropTypes.string,
+      user: PropTypes.shape({
+        name: PropTypes.string
+      })
+    }),
+    saved: PropTypes.bool,
+    visible: PropTypes.bool,
+    onSave: PropTypes.func,
+    onDrop: PropTypes.func
+  }
+
   constructor(props) {
     super(props)
     this.state = {
