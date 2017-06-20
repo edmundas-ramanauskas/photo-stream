@@ -1,0 +1,40 @@
+.wrapper {
+  width: 288px;
+  margin: 0 auto;
+}
+/* 2 columns */
+@media (min-width: 576px) {
+  .wrapper {
+    width: 576px;
+  }
+}
+/* 3 columns */
+@media (min-width: 864px) {
+  .wrapper {
+    width: 864px;
+  }
+}
+/* 4 columns */
+@media (min-width: 1152px) {
+  .wrapper {
+    width: 1152px;
+  }
+}
+/* 5 columns */
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+  }
+}
+/* 6 columns */
+@media (min-width: 1728px) {
+  .wrapper {
+    width: 1728px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}

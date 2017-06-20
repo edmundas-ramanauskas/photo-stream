@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-console": 1,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}

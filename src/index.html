@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|PT+Mono|Source+Sans+Pro:400,600" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e7e7e7;
+      font-family: 'Open Sans';
+    }
+  </style>
+</head>
+<body>
+  <div id="app" data-base="/">
+  <script src="<%= webpackConfig.output.filename %>"></script>
+</body>
+</html>
